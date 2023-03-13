@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+        <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"
+    ></script>
+	<title>TJ Collection</title>
+</head>
+
+<body>
+	<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__column">
+        <a class="logo" href="index.html">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" /></picture>
+        </a>
+      </div>
+
+      <div class="header__column">
+				<div class="header__center">
+					<div class="advantages">
+						<div class="advantages__item advantages__item-watch">возможность примерки</div>
+						<div class="advantages__item advantages__item-del">бесплатная доставка</div>
+						<div class="advantages__item advantages__item-swis">сделано в Италии</div>
+        	</div>
+        	<form class="search" action="#" method="post" name="form1">
+						<input class="search__input" id="search-item" type="text" name="searchInput" onkeyup="search()">
+						<button class="search__btn" type="submit"></button>
+        	</form>
+				</div>
+        
+      </div>
+
+      <div class="header__column header__cart">
+        <a href="checkout.html" class="">
+                    <p>
+						<span>
+                            <a href="checkout.html">
+                                <img src="" width="25px">
+                                <span class="mycart">0</span> - Моя корзина</a>
+                        </span>
+					</p>
+        </a>
+          
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="nav">
+	<div class="container">
+		<div class="nav__menu">
+			<nav>
+				<ul class="nav__menu-list">
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="index.html">Главная</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="contacts.html">Контакты</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="delivery.html">Доставка</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+	</div>
+</div>
+	<div class="wrapper">
+		<main class="page">
+			<section class="catalog">
+				<div class="container">
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="index.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span href="" class="breadcrumbs__current-link">Каталог</span>
+							</li>
+						</ul>
+					</nav>
+					<aside class="catalog__inner">
+						<form class="filter" action="#">
+							<div class="filter__title">ФИЛЬТРЫ</div>
+							<div class="filter__body">
+								<fieldset class="filter__gender">
+									<legend class="filter__gender-title title-filter">ПОЛ</legend>
+									<ul class="filter__gender-body">
+										<label class="filter__gender-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="categories"
+                                            value="watchm"
+                                            id="watchm">
+											<li class="checkbox__text"><label for="watchm">мужской</label></li>
+										</label>
+										<label class="filter__gender-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="categories"
+                                            value="watchw"
+                                            id="watchw">
+											<li class="checkbox__text"><a data-filter="watchw">Женский</a></li>
+										</label>
+									</ul>
+								</fieldset>
+
+								<fieldset class="filter__color">
+									<legend class="filter__color-title title-filter">ЦВЕТ</legend>
+									<ul class="filter__color-body">
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="tags"
+                                            value="blue"
+                                            id="blue">
+											<li class="checkbox__text">Розовый</li>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="tags"
+                                            value="white"
+                                            id="white">
+											<li class="checkbox__text">Белый</li>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="tags"
+                                            value="black"
+                                            id="black">
+											<li class="checkbox__text">Черный</li>
+										</label>
+									</ul>
+								</fieldset>
+								
+								<fieldset class="filter__material">
+									<legend class="filter__material-title title-filter">МАТЕРИАЛ ОБУВИ</legend>
+									<ul class="filter__material-body">
+										<label class="filter__material-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="availability"
+                                            value="plast"
+                                            id="plast">
+											<li class="checkbox__text">Текстиль</li>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox" name="availability"
+                                            value="silik"
+                                            id="silik">
+											<li class="checkbox__text">Нат. кожа</li>
+										</label>
+										<label class="filter__color-checkbox checkbox">
+											<input class="checkbox__input" type="checkbox">
+											<li class="checkbox__text">Синтетика</li>
+										</label>
+									</ul>
+								</fieldset>
+								
+							</div>
+						</form>
+						<section class="catalog__content">
+							<ul class="catalog__list product-list" id="product-list">
+                                <div class="product1 watchm black silik product2" >
+                                	<li class="catalog__item item-product" >
+									<div class="item-product__img">
+										<picture><source srcset="./img/pop/burn.webp" type="image/webp"><img src="./img/pop/burn.jpg" alt="Кроссовки Спутник" /></picture>
+									</div>
+									<h3 class="item-product__title">Crossfit Burn</h3>
+									<p class="item-product__price">9 970,0 <span>руб.</span></p>
+									<div class="item-product__hover hover-item-product">
+										<button class="hover-item-product__img add-cart" href="checkout.html" >
+											<picture><source srcset="./img/icons/cart.svg" type="image/webp"><img src="./img/icons/cart.svg" alt=""></picture>
+										</button>
+										<a class="hover-item-product__link" href="model-orange-cage.html">Открыть</a>
+									</div>
+								</li></div>
+                                
+                                <div class="product1 watchw white silik">
+								<li class="catalog__item item-product product2">
+									<div class="item-product__img">
+										<picture><source srcset="./img/pop/Alfa.webp" type="image/webp"><img src="./img/pop/alfa.webp" alt="Белые кеды Alfa" /></picture>
+									</div>
+									<h3 class="item-product__title">Alfa</h3>
+									<p class="item-product__price">12 880,0 <span>руб.</span></p>
+									<div class="item-product__hover hover-item-product">
+										<button class="hover-item-product__img add-cart" href="checkout.html" >
+											<picture><source srcset="./img/icons/cart.svg" type="image/webp"><img src="./img/icons/cart.svg" alt=""></picture>
+										</button>
+										<a class="hover-item-product__link" href="model-orange-cage1.html">Открыть</a>
+									</div>
+                                    </li></div>
+                                <div class="product1 watchw white silik product2">
+                                	<li class="catalog__item item-product" >
+									<div class="item-product__img">
+										<picture><source srcset="./img/pop/keds.webp" type="image/webp"><img src="./img/pop/keds.jpg" alt="Кроссовки Pink" /></picture>
+									</div>
+									<h3 class="item-product__title">Pink</h3>
+									<p class="item-product__price">4590,0 <span>руб.</span></p>
+									<div class="item-product__hover hover-item-product">
+										<button class="hover-item-product__img add-cart" href="checkout.html" >
+											<picture><source srcset="./img/icons/cart.svg" type="image/webp"><img src="./img/icons/cart.svg" alt=""></picture>
+										</button>
+										<a class="hover-item-product__link" href="model-orange-cage2.html">Открыть</a>
+									</div>
+								</li>
+                                </div>
+
+                                <div class="product1 watchm blue plast product2">
+                                	<li class="catalog__item item-product">
+									<div class="item-product__img">
+										<picture><source srcset="./img/pop/bic.jpg" type="image/webp"><img src="./img/pop/bic.jpg" alt="Женские туфли BIC" /></picture>
+									</div>
+									<h3 class="item-product__title">BIC</h3>
+									<p class="item-product__price">8 990,00 <span>руб.</span></p>
+									<div class="item-product__hover hover-item-product">
+										<button class="hover-item-product__img add-cart" href="checkout.html" >
+											<picture><source srcset="./img/icons/cart.svg" type="image/webp"><img src="./img/icons/cart.svg" alt=""></picture>
+										</button>
+										<a class="hover-item-product__link" href="model-orange-cage3.html">Открыть</a>
+									</div>
+								</li></div>
+								
+
+								<div class="product1 watchm blue plast product2">
+                                	<li class="catalog__item item-product">
+									<div class="item-product__img">
+										<picture><source srcset="./img/pop/lofi.webp" type="image/webp"><img src="./img/pop/lofi.webp" alt="Женские туфли BIC" /></picture>
+									</div>
+									<h3 class="item-product__title">Lofi</h3>
+									<p class="item-product__price">17 990,00 <span>руб.</span></p>
+									<div class="item-product__hover hover-item-product">
+										<button class="hover-item-product__img add-cart" href="checkout.html" >
+											<picture><source srcset="./img/icons/cart.svg" type="image/webp"><img src="./img/icons/cart.svg" alt=""></picture>
+										</button>
+										<a class="hover-item-product__link" href="model-orange-cage3.html">Открыть</a>
+									</div>
+								</li></div>
+							</ul>
+						</section>
+					</aside>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer footer--margin">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__info">
+
+				<div class="footer__info-logo-social">
+					<div class="footer__info-logo">
+						<a class="footer__info-link" href="index.html">
+							<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Логотип Swatch"></picture>
+						</a>
+					</div>
+					<div class="footer__info-social">
+						<p class="footer__info-title">Интернет-магазин обуви</p>
+					</div>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">О КОМПАНИИ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Доставка</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Оплата</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Контакты</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Возврат</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">СЕРВИС</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Сервис TJ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Уход за изделиями</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Работа в TJ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Найти магазин</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">ЗАКАЗЫ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Гарантия</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Условия продажи</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">FAQ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Свяжитесь с нами</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">КОНТАКТЫ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<p class="footer__about-address">г. Казань</p>
+							
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="tel:+78125554433">+ 7 (900) 000-00-00</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="mailto:tj@collection.com">tj@collection.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<a href="https://tjcollection.ru">© TJ COLLECTION 2023, Все права защищены</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.min.js"></script>
+    <script src="js/filter.js"></script>
+    <script type="text/javascript" src="scripts/shoppingcart.js"></script>
+</body>
+
+</html>

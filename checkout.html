@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title> TJ Collection - корзина </title>
+</head>
+
+<body>
+	<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__column">
+        <a class="logo" href="index.html">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" /></picture>
+        </a>
+      </div>
+
+      <div class="header__column">
+				<div class="header__center">
+					<div class="advantages">
+						<div class="advantages__item advantages__item-watch">возможность примерки</div>
+						<div class="advantages__item advantages__item-del">бесплатная доставка</div>
+						<div class="advantages__item advantages__item-swis">сделано в Италии</div>
+        	</div>
+        	<form class="search" action="#" method="post" name="form1">
+						<input class="search__input" type="text" name="searchInput">
+						<button class="search__btn" type="submit"></button>
+        	</form>
+				</div>
+        
+      </div>
+
+            <div class="header__column header__cart">
+        <a href="checkout.html" class="">
+                    <p>
+						<span>
+                            <a href="checkout.html">
+                                <img src="" width="25px">
+                                <span class="mycart">0</span> - Моя корзина</a>
+                        </span>
+					</p>
+        </a>
+          
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="nav">
+	<div class="container">
+		<div class="nav__menu">
+			<nav>
+				<ul class="nav__menu-list">
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="index.html">Главная</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="contacts.html">Контакты</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-link" href="delivery.html">Доставка</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+	</div>
+</div>
+	<div class="wrapper">
+		<main class="page">
+			<section class="checkout container">
+				<nav class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="index.html" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current-link">Корзина</span>
+						</li>
+					</ul>
+				</nav>
+				<form action="#" class="checkout__inner">
+
+					<div class="checkout-order">
+						<h2 class="checkout-order__title title">Ваш заказ</h2>
+                            
+                              <div id="main-container">
+                                    <div class="products-container">
+                                        <div class="product-header">
+                                            <h5 class="product-title">Товар</h5>
+                                            <h5 class="price">Цена</h5>
+                                            <h5 class="quantity">Количество</h5>
+                                            <h5 class="total">Сумма</h5>
+                                        </div>
+                                        <div class="products">
+
+                                        </div>
+                                    </div>
+                                    </div>      
+                        
+						<button type="submit" class="checkout-order__btn btn--red">Оформить заказ</button>
+					</div>
+
+					<div class="checkout__form">
+						<h2 class="checkout-order__title title">Оформление заказа</h2>
+						<div class="form-checkout">
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Фамилия</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Имя</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Отчество</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Моб. телефон</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="tel" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">E-mail</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="email" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Индекс</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Город</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Адрес доставки</div>
+								<div class="form-checkout__input">
+									<input autocomplete="off" type="text" value="" required>
+								</div>
+							</div>
+							<div class="form-checkout__line">
+								<div class="form-checkout__label">Комментарий</div>
+									<textarea class="form-checkout__input form-checkout__input--area" name="" id="" ></textarea>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</section>
+
+		</main>
+		<footer class="footer footer--margin">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__info">
+
+				<div class="footer__info-logo-social">
+					<div class="footer__info-logo">
+						<a class="footer__info-link" href="index.html">
+							<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Логотип Swatch"></picture>
+						</a>
+					</div>
+					<div class="footer__info-social">
+						<p class="footer__info-title">Интернет-магазин обуви</p>
+					</div>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">О КОМПАНИИ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Доставка</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Оплата</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Контакты</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Возврат</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">СЕРВИС</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Сервис TJ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Уход за обувью</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Работа в TJ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Найти магазин</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">ЗАКАЗЫ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Гарантия</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Условия продажи</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">FAQ</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="#">Свяжитесь с нами</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__about">
+					<h3 class="footer__about-title">КОНТАКТЫ</h3>
+					<ul class="footer__about-list">
+						<li class="footer__about-item">
+							<p class="footer__about-address">г. Казань</p>
+							
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="tel:+78125554433">+ 7 (999) 000-00-00</a>
+						</li>
+						<li class="footer__about-item">
+							<a class="footer__about-link" href="mailto:swatch@watch.com">tjcollection</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<a href="https://shop.swatch.com/ru_ru/">© Магазин обуви 2023, Все права защищены</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+
+    
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.min.js"></script>
+    <script type="text/javascript" src="scripts/shoppingcart.js"></script>
+</body>
+
+</html>
