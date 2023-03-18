@@ -4,41 +4,35 @@ let carts = document.querySelectorAll('.add-cart');
 // get item details
 let products =[
 {
-	name: 'C-BLACK',
-	tag: 'c-black',
-	price: 9990,
+	name: 'CROSSFIT BURN',
+	tag: 'BURN',
+	price: 9970,
 	inCart: 0
 },
 {
-	name: 'C-GREY',
-	tag: 'c-grey',
+	name: 'Alfa',
+	tag: 'Alfa',
+	price: 12880,
+	inCart: 0
+},
+{
+	name: 'Pink',
+	tag: 'Pink',
+	price: 4590,
+	inCart: 0
+},
+{
+	name: 'BIC',
+	tag: 'bic',
 	price: 8990,
 	inCart: 0
 },
 {
-	name: 'C-WHITE',
-	tag: 'c-white',
-	price: 3490,
+	name: 'LOFI',
+	tag: 'lofi',
+	price: 17990,
 	inCart: 0
 },
-{
-	name: 'Electric-blue',
-	tag: 'electric-blue',
-	price: 8990,
-	inCart: 0
-},
-{
-	name: 'Speed-Up',
-	tag: 'speed-up',
-	price: 8990,
-	inCart: 0
-},
-{
-	name: 'часы6',
-	tag: 'nicelovely6',
-	price: 1990,
-	inCart: 0
-}
 ];
 
 
